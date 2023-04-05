@@ -6,42 +6,19 @@ on:
       - develop
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout source code
-      uses: actions/checkout@v3
-
-    - name: Install dependencies
-      run: npm i
-
-    - name: Build
-      run: npm run build
-  
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout to gh-pages branch
-      uses: actions/checkout@v2
-      with:
-        ref: gh-pages
-
-    - name: Copy build files
-      run: cp -r ./build/* .
-
-    - name: Commit changes
-      uses: EndBug/add-and-commit@v7
-      with:
-        message: "Deploy build"
-        add: .
-        branch: gh-pages
-
-    - name: Push changes
-      uses: JamesIves/github-pages-deploy-action@4.1.0
-      with:
-        branch: gh-pages
-        folder: build
-        token: ${{ secrets.ACTION_TOKEN }}
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      - name: Install dependencies and build
+        run: |
+          npm i
+          npm run build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
