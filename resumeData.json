@@ -50,22 +50,39 @@
     ],
     "work": [
       {
+        "company": "CGI",
+        "title": "Java Developer",
+        "years": "Jan 2023 - Present",
+        "description": [
+          "Assesed on implementing API Gateways using Kong and Google Apigee to improve service discovery and routing across multiple microservices, resulting in a 30% reduction in latency and improved scalability.",
+          "Implemented a Service mesh architecture using Istio and Envoy to provide secure, resilient communication between microservices, resulting in a 50% reduction in service downtime.",
+          "Developed a Java Spring Boot microservice for the Wealth360 platform to process and analyze real-time market data from Solace messaging platform, improving the accuracy of financial models by 20%."
+        ]
+      },
+      {
         "company": "Thales",
-        "title": "Sofware Tool Developer",
-        "years": "Jan 2022 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "title": "SDE",
+        "years": "Jan 2022 - Aug 2022",
+        "description": [
+          "Assessed and analyzed APIs and stress scripts for an Embedded system that incorporated the Thales Onboard Platform (TOP) hardware on SIMS, resulting in identifying and resolving critical issues, reducing system downtime by 25%.",
+          "Developed and implemented REST APIs in Node.js and Express, enabling the analytics team to increase reporting speed by 30%, resulting in faster decision-making and improved business outcomes."
+        ]
+      },
+      {
+        "company": "Hack the Valley",
+        "title": "Web-Developer",
+        "years": "Apr 20222 - Present",
+        "description": [
+          "Developed and contributed to the hackathon's judging platform using PostgreSQL and GraphQL, resulting in a 50% decrease in judging time and a 25% increase in accuracy for event organizers and participants."
+        ]
       },
       {
         "company": "Live Competition",
         "title": "Back-end Developer",
         "years": "Apr 2022 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      },
-      {
-        "company": "Hack the Valley",
-        "title": "Web-Developer",
-        "years": "Apr 2022 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": [
+          "Operated as a backend developer in a team of 7 members to resolve client-impacting bugs and designed 4 REST APIs using Django to incorporate new features into a competition portal accessed by 100+ delegates and judges."
+        ]
       }
     ],
     "skills": [
@@ -104,20 +121,8 @@
       {
         "title": "Insight",
         "category": "Conceptualized and developed a web application that helps user's who are socially inactive.",
-        "image": "Insight.jpg",
+        "image": "insight.jpg",
         "url": "https://devpost.com/software/insight-9x87v2"
-      },
-      {
-        "title": "Growth",
-        "category": "Implemented a website using Django that will help communities interact and learn from one another, as well as provide E-Learning facilities.",
-        "image": "fury-fighting-gear.jpg",
-        "url": "https://github.com/UTSCCSCC01/project-growth"
-      },
-      {
-        "title": "Zoomer",
-        "category": "Created an application with a microservices architecture, containing three microservices (backend Java APIs) with an accompanying API Gateway.",
-        "image": "original-thai-food.jpg",
-        "url": "https://github.com/UTSCCSCC01/a2s21-Mahabharat"
       },
       {
         "title": "Plasma Share",
