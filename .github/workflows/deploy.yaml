@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - develop
-  workflow_dispatch:
+  workflow_dispacth:
 
 jobs:
   build-and-deploy:
@@ -21,4 +21,5 @@ jobs:
         with:
           branch: gh-pages
           folder: build
+        env:
           token: ${{ secrets.ACTION_TOKEN }}
