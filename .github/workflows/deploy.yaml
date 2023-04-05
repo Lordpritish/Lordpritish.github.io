@@ -24,13 +24,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout deployment branch
+    - name: Checkout to gh-pages branch
       uses: actions/checkout@v2
       with:
         ref: gh-pages
 
     - name: Copy build files
-      run: cp -r build/* .
+      run: cp -r ./build/* .
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v7
